@@ -39,45 +39,45 @@ stories.add('State Hook - multiple variables', () => {
 
         // style
         const List = styled.ul`
-        list-style: none;
-        color: red;
-        padding-left: 0;
-        width: 250px;
-    `;
+            list-style: none;
+            color: red;
+            padding-left: 0;
+            width: 250px;
+        `;
         const ListItem = styled.li`
-        color: #333;
-        background-color: rgba(255, 255, 255, .5);
-        padding: 15px;
-        margin-bottom: 15px;
-        border-radius: 5px;
-        list-style: none;
-    `;
+            color: #333;
+            background-color: rgba(255, 255, 255, .5);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            list-style: none;
+        `;
         const ListInput = styled.input`
-        padding: 10px;
-        font-size: 16px;
-        border: 2px solid #FFF;
-        width: 165px;
-    `;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #FFF;
+            width: 165px;
+        `;
         const ListButton = styled.button`
-        padding: 10px;
-        font-size: 16px;
-        margin: 10px;
-        margin-right: 0px;
-        background-color: #0066FF;
-        color: #FFF;
-        border: 2px solid #0066FF;
-          
-        :hover {
-            background-color: #003399;
-            border: 2px solid #003399;
-            cursor: pointer;
-        }
-        
-        :disabled {
-            background-color: lightgray;
-            border: 2px solid lightgray;
-        }
-    `;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            margin-right: 0px;
+            background-color: #0066FF;
+            color: #FFF;
+            border: 2px solid #0066FF;
+              
+            :hover {
+                background-color: #003399;
+                border: 2px solid #003399;
+                cursor: pointer;
+            }
+            
+            :disabled {
+                background-color: lightgray;
+                border: 2px solid lightgray;
+            }
+        `;
         function handleSubmit(event) {
             event.preventDefault();
             setTodos(todos.concat(inputValue));
